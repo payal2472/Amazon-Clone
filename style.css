@@ -2,7 +2,12 @@
     margin:0;
     font-family: Arial;
     border: border-box;
+
 }
+body{
+    background-color: #cccccc;
+}
+
 .navbar{
     height: 60px;
     background-color: #0f1111;
@@ -105,6 +110,9 @@ span{
     align-items: center;
     font-weight: 700;
 }
+#box-1{
+    margin-bottom: 0px;
+}
 .panel-ops p{
     display: inline;
     margin-left: 20px;
@@ -153,29 +161,72 @@ span{
     display: flex;
     justify-content: space-evenly;
     background-color: #8edad0;
+    margin-bottom: 20px;
+    height: 450px;
 }
 .box{
     
     height:400px;
-    width: 50%;
+    width: 23%;
     background-color: white;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(255, 254, 254);
     padding: 20px 0px 15px;
+    
 }
 #box-1{
     display: flex;
-    gap: 0px;
-    padding: 0px;
+    justify-content: center;
+    text-align: center; 
 }
+#box-2{
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+}
+/** BOX3 START**/
+.box3-img{
+    background-image: url('./images/only1.jpg');
+    height: 250px;
+    background-image: cover;
+    width: 90%;
+    padding: 20px 0px 15px ;
+    
+}
+.box3-content{
+    margin-left: 17.5px;
+    text-align: center;
+    
+
+
+}
+/** BOX3 END**/
+
+/** BOX4 START**/
+.box4-img{
+    background-image: url('./images/mini\ plant.jpg');
+    height: 250px;
+    background-image: cover;
+    width: 90%;
+    padding: 20px 0px 15px ;
+}
+.box4-content{
+    margin-left: 17.5px;
+    text-align: center;
+}
+
+/** BOX4 END**/
+
 .box-content{
-    border: 1px solid #ddd;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 5px;
-    padding: 20px;
-    width: 100%;
+    
+    
 }
-h2{
-    font-size: 1.5rem;
-    background-size: cover;
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 .items {
@@ -189,7 +240,6 @@ h2{
 }
 
 .item img {
-    background-size: cover;
     max-width: 100%;
     border-radius: 5px;
 }
@@ -201,6 +251,7 @@ h2{
 
 .see-more {
     display: inline-block;
+    position: flex;
     margin-top: 20px;
     color: #0073e6;
     text-decoration: none;
@@ -208,4 +259,76 @@ h2{
 
 .see-more:hover {
     text-decoration: underline;
+}
+/**LADY SECTION ************************** **/
+
+.lady-section{
+    
+    margin-bottom: 20px;
+    background-size: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(255, 255, 255);
+}
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.see-more {
+    font-size: 0.9em;
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.see-more:hover {
+    text-decoration: underline;
+}
+
+.scroll-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.scroll-content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.scroll-content img {
+    flex: 0 0 auto;
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.scroll-button.left {
+    left: 0;
+}
+
+.scroll-button.right {
+    right: 0;
+}
+
+.scroll-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }

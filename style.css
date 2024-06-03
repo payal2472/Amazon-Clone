@@ -332,3 +332,38 @@ h2 {
 .scroll-button:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
+/**LADY SECTION  end************************** **/
+
+/** Grocery SECTION ************************** **/
+.Grocery-section{
+    margin-bottom: 0px;
+    background-size: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.scroll2-content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+.hr-tag{
+    margin-top: 20px;
+}
+
+/** Grocery SECTION  end************************** **/
+
+/** footer SECTION ************************** **/
+.footer-panell{
+    background-color: #37475a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 20px;
+
+}
